@@ -1,0 +1,717 @@
+<link rel="stylesheet" herf="css/css practise.css">
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+
+</head>
+<style>
+    .container{
+       
+        justify-content:center;
+        margin-right: 372px;
+        margin-left: 372px;
+        font-family:'Montserrat',Verdana,arial,sans-serif;
+    }
+
+
+    .topbar{
+        color: #595959;
+        
+        height: 30px;
+        font-family:'Montserrat',Verdana,arial,sans-serif;
+        width: 100%;
+       font-size:12px;
+        white-space: nowrap;
+        margin:0 auto;
+display:flex;
+border-bottom: 1px grey solid;
+        
+    }
+    
+    #ed1{
+        
+        margin: 1px 10px 0px 0px;
+        float: left;
+        font-size: 10px;
+        
+    }
+
+.topbarB{
+float: left;
+border-left: 1px grey solid;
+height:60%;
+}
+#date{
+    margin: 1px 15px 0px 10px;
+}
+
+#weather{
+    margin: 1px 330px 0px 10px;
+    
+}
+#weather_image{
+    margin-bottom: 5px;
+}
+#weather_text{
+    position: relative ;
+    bottom: 14px;
+}
+#visit{
+    background: linear-gradient(90deg, #3023ae, #c86dd7);
+    padding: 1px 4px;
+    border-radius:5px ;
+    line-height: 10px;
+    height: 17px;
+    width: 200PX;
+    margin-right: 10px;
+    
+
+}
+    #crown{
+        position: relative;
+        top:5px;
+        
+    }
+#visittext{
+    color: #fff;
+    position: relative;
+    top:5px;
+    font-size: 10px;
+
+    
+}
+#signup{
+    margin-right:15px;
+}
+#social_symbolp{
+    position: relative;
+    bottom: 5px;
+}
+#middlerow{
+    border-bottom: 1px grey solid;
+}
+     #middlerowp{
+         background-size: 1400px;
+         
+     }
+     #bottomrow{
+         display: grid;
+         
+         grid-template-columns:repeat(16,1fr) 3fr ;
+         font-size: 13px;
+         padding: 12px ;
+         color: #1A1A1A;
+         text-align: center;
+         border-bottom: 2px black solid;
+         position: relative;
+         
+
+
+     }
+     #toi{
+         display: block;
+         position: relative;
+         bottom: 5px;
+         left: 90px;
+     }
+#innews{
+    display: grid;
+    grid-template-columns: repeat(5,1fr) 3fr;
+text-align: center;
+    padding: 5px 0px 5px 0px;
+    font-size: 10px;
+    position: relative;
+    right: 5px;
+    border-bottom:1px #ececec solid;
+    
+
+}
+#innewstxt{
+    color:#e21b22;
+    font-weight: 700;
+    
+}
+     .trending{
+         font-size: 13px;
+         display: grid;
+         grid-template-columns: [a1]35fr [a2]15fr [a3]25fr;
+         padding-top: 25px;
+         grid-template-rows: [row1]900px;
+     }
+     .a1{
+         grid-column: a1;
+         grid-row: row1;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: repeat(10, 1fr);
+         grid-template-areas:
+         "aa1 aa1"
+         "aa1 aa1"
+         "aa1 aa1"
+         "aa1 aa1"
+         "ab1 ab2"
+         "ac1 ac2"
+         "ad1 ad2"
+         "ae1 ae2"
+         "af1 af2"
+         "ag1 ag2";
+         border-right: 1px #595959 dotted;
+     }
+     .a2{
+         grid-column: a2;
+         grid-row: row1;
+         display: grid;
+         grid-template-rows: [a]1fr [b]1fr [c]1fr [d]1fr [e]1fr ;
+         padding: 20px 20px 20px 20px;
+         border-right: 1px #595959 dotted;
+         
+
+     }
+     .a3{
+         grid-column: a3;
+         
+         word-break: keep-all;
+     }
+     #bb{
+         border-bottom:1px #595959 dotted ;
+         padding-bottom: 12px;
+         padding-top: 12px;
+         
+         
+     }
+     .a1mainphoto{
+         grid-area: aa1;
+         resize: 1.2;
+         
+     }
+         #item1{
+             grid-area: ab1;
+             width: 300px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+            
+         }
+     #item2{
+         grid-area: ab2;
+         width: 240px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+             
+     }
+     #item3{
+         grid-area: ac1 ;
+         width: 300px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+
+         
+     }
+     #item4{
+         grid-area: ac2;
+         width: 240px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+         
+        
+     }
+     #item5{
+         grid-area: ad1;
+         width: 300px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+
+     }
+     #item6{
+         grid-area: ad2;
+         width: 240px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+
+     }
+     #item7{
+        grid-area: ae1;
+         width: 300px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+     }
+     #item8{
+        grid-area: ae2;
+         width: 240px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+
+     }
+     #item9{
+        grid-area: af1;
+         width: 300px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+     }
+     #item10{
+        grid-area: af2;
+         width: 240px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+
+     }
+     #item11{
+        grid-area: ag1;
+         width: 300px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+     }
+     #item12{
+        grid-area: ag2;
+         width: 240px;
+             height: 80px;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             border-bottom:1px #595959 dotted;
+
+     }
+     #a2item1{
+         grid-area: a;
+         width: 160px;
+
+     }
+     #a2item2{
+         grid-area: b;
+         width: 160px;
+
+     }
+     #a2item3{
+         grid-area: c;
+         width: 160px;
+
+     }
+     #a2item4{
+         grid-area: d;
+         width: 160px;
+
+     }
+     #a2item5{
+         grid-area: e;
+         width: 160px;
+
+     }
+     #advertisment{
+         width:300px ;
+         height: 250px;
+         background-color: #eeeeee;
+         position: relative;
+         left: 50px;
+         animation-name: placeHolderShimmer;
+         animation-duration: 1s;
+         animation-iteration-count: infinite;animation-timing-function: linear;
+         @keyframes placeHolderShimmer {
+             background: linear-gradient(90deg,#eee 8%, #ddd 18%, #eee 33%);
+             
+         }
+     }
+         #advtxt{
+             text-align:center;
+             color : #686868;
+         }
+         #heading{
+             font-size:18px;
+             padding: 20px 0px 20px 0px;
+             font-weight: 525;
+         }
+         #border{
+             border-bottom: 1px #bebebe solid;
+         }
+     #border1{
+         border-bottom: 1px #bebebe dotted;
+         padding-bottom: 2px;
+     }
+     .entertainment{
+         display: grid;
+         grid-template-columns: [e1]1fr [e2]1fr [e3]1fr;
+         grid-template-rows: [row]550px;
+         
+         
+     }
+     #ent1{
+         grid-area: e1;
+         display: grid;
+         position: relative;
+        bottom: 475px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-template-areas: 
+             "ar1 ar1"
+             "ar2 ar3"
+             "ar4 ar5";   
+         font-size: 12px;
+     }
+     #b1item{
+         padding-bottom: 10px;
+         grid-area: ar1;
+     }
+     #b2item{
+        padding-bottom: 10px;
+        grid-area: ar2;
+        padding-right: 10px;
+     }
+     #b3item{
+         padding-bottom: 10px;
+         grid-area: ar3;
+     }
+     #b4item{
+         padding-bottom: 10px;
+         grid-area: ar4;
+     }
+     #b5item{
+         padding-bottom: 10px;
+         grid-area: ar5;
+     }
+     #ent2{
+         grid-area: e2;
+         display: grid;
+         position: relative;
+         bottom: 475px;
+         font-size: 13px;
+         border-right:1px #595959 dotted;
+        
+     }
+     #ent3{
+         grid-area: e3;
+         display: grid;
+         position: relative;
+         bottom: 475px;
+         font-size: 13px;
+         left: 20px;
+         grid-template-columns: 1f 1f 1f;
+         grid-template-rows: 1f 1f 1f;
+         grid-template-areas: 
+         "ao1 ao2 ao3"
+         "bo1 bo2 bo3"
+         "co1 co2 co3";
+     }
+     #ao1{
+         grid-area: ao1;
+     }
+     #ao2{
+         grid-area: ao2;
+     }
+     #ao3{
+         grid-area: ao3;
+     }
+     #bo1{
+         grid-area: bo1;
+     }
+     #bo2{
+         grid-area: bo2;
+     }
+     #bo3{
+         grid-area: bo3;
+     }
+     #co1{
+         grid-area: co1;
+     }
+     #co2{
+         grid-area: co2;
+     }
+     #co3{
+         grid-area: co3;
+     }
+    #trash{
+        position: relative;
+        bottom: 620px;
+    }
+    #review{
+        display: grid;
+        grid-template-columns: [r1]1fr [r2]1fr [r3]1fr ;
+        grid-template-rows: 160px;
+        position: relative;
+        bottom: 470px;
+        
+    }
+    #rtxt{
+        position: relative;
+        bottom: 470px;
+        font-size: 13x;
+        font-weight: 500;
+    }
+#r1{
+    grid-area: r1;
+    position: relative;
+        bottom: 470px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
+#r2{
+    grid-area: r2;
+    position: relative;
+        bottom: 470px;
+    
+}
+#r3{
+    grid-area: r3;
+    position: relative;
+        bottom: 470px;
+}
+#rhtxt{
+    font-size: 13px;
+    font-weight: 500;
+    float: left;
+}
+#rhtxt2{
+    font-size: 12px;
+    float: right;
+}
+
+</style>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="topbar">
+<div id="ed1">EDITION 
+    <a href="">
+    <img src= C:\Users\vaibh\OneDrive\Desktop\part1\images\flagin.png > IN
+    <img src= C:\Users\vaibh\OneDrive\Desktop\part1\images\arrowd.png ></a>
+</div><div class="topbarB"></div>
+    <div id="date" >
+             TUE, MAR 30, 2021 | UPDATED 03.18PM IST
+    </div>
+    <div class="topbarB"></div>
+<div id="weather">
+    <samp id="weather_text">DELHI </samp> <a href=""><img ID="weather_image" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\weth.png" ></a>
+    <samp id="weather_text"><strong>35</strong>°C</samp>
+</div>
+<div id="visit">
+    <img id="crown" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\4.png" ALIGN="left">
+    <div id="visittext">Visit TOI daily & earn TimesPoints!</div>
+</div>
+<div id="signup"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">SIGN UP</div></a>
+<div id="social_symbol">
+    <img id="social_symbolp" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\symbol_social.png">
+</div>
+</div>
+<div id="middlerow">
+    <img id="middlrowp" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\toi.png">
+</div>
+<div id="bottomrow">
+<samp>Briefs</samp>
+<samp>Videos</samp>
+<samp>City</samp>
+<samp>India</samp>
+<samp>World</samp>
+<samp>Business</samp>
+<samp>Tech</samp>
+<samp>Cricket</samp>
+<samp>Sports</samp>
+<samp>Entertainment</samp>
+<samp>TV</samp>
+<samp>Web Series</samp>
+<samp>Life & Style</samp>
+<samp>Education</samp>
+<samp>Photos</samp>
+<samp>Blogs</samp>
+<img id="toi" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\toiB.png">
+</div>
+<div id="innews">
+<div id="innewstxt">IN THE NEWS</div>
+<div>IPL 2021</div>
+<div>ASSEMBLY ELECTIONS 2021</div>
+<div>WEST BENGAL ELECTIONS 2021</div>
+<div>CORONAVIRUS</div>
+<div>.</div>
+</div>
+    </div>
+    <div class="trending">
+   
+    <img class="a1" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a11.png">
+    <div class="a1">
+        <div id="item1">Live: Random Covid testing to start from today at Delhi airport
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a12.png">
+        </div>
+        <div id="item2">Total lockdown not in offing, more curbs soon: Maha govt
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a13.png">
+        </div>
+        <div id="item3">IPL 2021: Can Mumbai Indians do an encore?
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a14.png">
+        </div>
+        <div id="item4">25 Indian crew of refloated vessel in ‘good health'
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a15.png">
+        </div>
+        <div id="item5">
+            Acquitted after decades in jail, they ask 'what about life lost?'
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a16.png">
+        </div>
+        <div id="item6">B'luru: Schools, colleges turn containment zones
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a17.png">
+        </div>
+        <div id="item7">MP: Girl pokes head out of bus window, beheaded
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a18.png">
+        </div>
+        <div id="item8">'Conditions that cause Covid hospitalizations'
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a19.png">
+        </div>
+        <div id="item9">10 things to do before selling your Android phone
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a110.png">
+        </div>
+        <div id="item10">Here’s how to link PAN with Aadhaar online
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a111.png">
+        </div>
+        <div id="item11">The perfect ring for 'when it rings true'
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a112.png">
+        </div>
+        <div id="item12">Empower your university applications with the SAT
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a113.png">
+        </div>
+    </div>
+    <div class="a2">
+<div id="a2item1">
+    <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a21.png">
+    Must unite against BJP's assault on democracy: Mamata writes to...
+</div>
+<div id="a2item2">
+    <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a22.png">
+    Somy Ali on break-up with Salman Khan: 'He cheated on me'
+</div>
+<div id="a2item3">
+    <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a23.png">
+    Neetu Kapoor recalls breaking up with Rishi Kapoor during a song
+</div>
+<div id="a2item4">
+    <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a24.png">
+    Farm law stir: Farmers to march to Parliament in May
+
+</div>
+<div id="a2item5">
+    <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\a25.png">
+    'She has been inhuman': Shweta Tiwari's husband hits back
+</div>
+    </div>
+    <div class="a3">
+        <div id="advtxt">Advertisment</div>
+        <div id="advertisment">
+
+        </div>
+<ul>
+    <li id="bb">Highlights from The Education Leaders Summit </li>
+    <li id="bb">What does the 5G power mean for these indu..</li>
+    <li id="bb">LPG refill to be cheaper by Rs 10 from Apr..</li>
+    <li id="bb">Hyd: I-T dept detects Rs 700cr tax evasion..</li>
+    <li id="bb">'Low testing in Punjab': Amarinder hits back</li>
+    <li id="bb">Pak lifts ban on cotton, sugar imports from India</li>
+    <li id="bb">Farm law stir: Farmers to march to Parl in May</li>
+    <li id="bb">'She was inhuman': Shweta's husband hits back</li>
+    <li id="bb">Pfizer says its Covid vaccine protects you..</li>
+    <li id="bb">I have nothing to prove to anyone: Harbhajan</li>
+    <li id="bb">'Inflation target retained at same level ...</li>
+    <li id="bb">Live updates: Joy Filmfare Awards Bangla 2021</li>
+    <li id="bb">RBI extends deadline for processing auto...</li>
+</ul>
+    </div>
+<strong>TRENDING NEWS</strong>
+</div>
+<div id="heading">OPINIONS ></div>
+<div id="border"></div>
+<img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\d2d.png">
+   <div id="border1"></div><div id="border1"></div>
+    <div class="entertainment">
+        <div id="heading">ENTERTAINMENT ></div>
+        <div id="ent1">
+        <div id="b1item">
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\b11.png">
+            
+        </div>
+        <div id="b2item">
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\b12.png">
+            Manoj on 50 per cent occupancy in theatres
+        </div>
+        <div id="b3item">
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\d1.png">
+            Bappi Lahiri tests positive for COVID-19
+        </div>
+        <div id="b4item" >
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\d2.png">
+            Pap diary: Anushka on sets, Malaika with her pet
+        </div>
+        <div id="b5item">
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\d3.png">
+            Taarak's Mandar tests negative for COVID-19
+        </div>
+    </div>
+    <div id="ent2">
+        <ul>
+            <li id="bb">Sara Ali Khan's 10 best lehenga looks</li>
+            <li id="bb">Harsh Varrdhan: I'd rather do quality films</li>
+            <li id="bb">SRK's reply to his fan will leave you in splits</li>
+            <li id="bb">Taapsee Pannu: Audience is the Godfather</li>
+            <li id="bb">Sahil Vaid on working with Varun Dhawan</li>
+            <li id="bb">Bolly Buzz: SRK, Anushka make headlines</li>
+            <li id="bb">Demystifying Vertigo and Dizziness</li>
+            <li id="bb">Quirky sari looks of Kirti Kulhari</li>
+            <li id="bb">Beauty queen Jehza Huelar welcomes baby boy
+            </li>
+            <li id="bb">Prince Narula and wife Yuvika twin in white</li>
+            <li id="bb">Sunil Grover’s two-day late ‘Holi’ wish</li>
+            <li id="bb">Shweta's husband: She has been inhuman to m</li>
+            <li id="bb">Lovely pictures of Anu Emmanuel </li>
+            <li id="bb">Top 10 pictures of Vaidehi Parashurami</li>
+        </ul>
+    </div>
+    <div id="ent3">
+        <strong id="trash">ETIMES PHOTOS ></strong>
+        <img id="ao1" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c1.png">
+        <img id="ao2" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c2.png">
+        <img id="ao3" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c3.png">
+        <img id="bo1" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c4.png">
+        <img id="bo2" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c5.png">
+        <img id="bo3" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c6.png">
+        <img id="co1" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c7.png">
+        <img id="co2" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c8.png">
+        <img id="co3" src="C:\Users\vaibh\OneDrive\Desktop\part1\images\c9.png">
+    </div>
+    </div>
+    <div id="reivew">
+        <div id="rtxt">REVIEWS ></div>
+        <div id="r1">
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\r2.png">
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\r3.png">
+            <img src="C:\Users\vaibh\OneDrive\Desktop\part1\images\r4.png">
+          
+            <div id="border"></div>
+            
+           
+        </div>
+        <div id="r2"> <div id="border"></div></div>
+        <div id="r3"> <div id="border"></div></div>
+
+
+    </div>
+    
+    </div>
+</div> 
+</h1>
+</body>
+</html>
